@@ -1,0 +1,21 @@
+<header>
+ <div class="header-main">
+  <div @fade>
+   <span class="bfm14">PORTFOLIO</span>
+  </div>
+  <div class="option" @fadeIn>
+   @for(option of options;track $index){
+    <p class="tab bfeb10" [class.active]="option['tag']==tag" (click)="tag = option['tag']">
+     {{option['name']}}
+    </p>
+   }
+   <p class="bfr14" (click)="toggleDarkmode()">
+    @if(isDarkMode){
+     <i class="fa-regular fa-sun" ></i>
+    }@else {
+     <i class="fa-regular fa-moon"></i>
+    }
+   </p>
+  </div>
+ </div>
+</header>

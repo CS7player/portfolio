@@ -1,0 +1,9 @@
+$primary-font: 'JetBrainsMono', sans-serif;
+$assetsPath: "assets/";
+
+$font-weight: (
+ "light":(code: 'l', weight:300),
+ "regular":(code: 'r', weight:normal),
+ "medium":(code: 'm', weight:500),
+ "extra-bold":(code: 'eb', weight:800),
+);

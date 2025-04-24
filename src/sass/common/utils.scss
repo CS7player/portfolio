@@ -1,0 +1,34 @@
+@use "../abstract/" as *;
+@use "sass:map";
+@use "sass:math";
+@use "sass:list";
+
+
+#body {
+ // Fonts
+ @for $i from 1 through 30 {
+  $k: '#{if($i < 10, "0#{$i}", $i)}';
+  $value: math.div($i, 10);
+  @each $n, $w in $font-weight {
+   $k1: map.get($w, code);
+   .bf#{$k1}#{$k} {
+    font-size: #{$value}rem;
+    font-weight: get-font-weight($n);
+   }
+  }
+ }
+ // Colors
+ // @each $n, $w in $colors {
+ //  $code: map.get($w, "code");
+ //  $color: map.get($w, "color");
+ //  .#{$code} {
+ //   color: #{$color};
+ //  }
+  // .bdr-#{$code}{
+  //  border: 1px solid #{$color};
+  // }
+  // .bg-#{$code}{
+  //  background: #{$color};
+  // }
+ // }
+}

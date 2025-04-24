@@ -1,0 +1,31 @@
+@use '../abstract/function' as *;
+@use '../abstract/variables' as *;
+@use "sass:list";
+@use "sass:math";
+@use "sass:map";
+$fontPath: "/public/assets/fonts/jetBrains";
+$fonts: (
+ 'JetBrainsMono': (
+  'light':'JetBrainsMono-Light',
+  'regular': 'JetBrainsMono-Regular',
+  'medium':'JetBrainsMono-Medium',
+  'extra-bold': 'JetBrainsMono-ExtraBold'
+ )
+);
+$weight-values: (
+  'light': 300,
+  'regular': normal,
+  'medium': 500,
+  'extra-bold': 800,
+);
+@each $font-family, $weights in $fonts {
+ @each $weight, $path in $weights {
+  @font-face {
+   font-family: '#{$font-family}';
+   src: url("#{$fontPath}/#{$path}.woff2") format("woff2");
+   font-weight: map.get($weight-values, $weight);
+   font-style: normal;
+   display: swap;
+  }
+ }
+}

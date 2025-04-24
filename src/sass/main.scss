@@ -1,0 +1,13 @@
+@use 'common';
+@use 'pages';
+
+:root {
+ --clr-text:  #44ff00;
+ --clr-background: #000000;
+ --clr-border: #ffffff;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+}

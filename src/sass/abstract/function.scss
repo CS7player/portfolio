@@ -1,0 +1,7 @@
+@use 'variables' as *;
+@use "sass:map";
+
+@function get-font-weight($name) {
+ $m:map.get($font-weight, $name);
+ @return map.get($m, weight);
+}

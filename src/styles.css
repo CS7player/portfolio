@@ -1,1 +1,585 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/public/assets/fonts/jetBrains/JetBrainsMono-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/public/assets/fonts/jetBrains/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/public/assets/fonts/jetBrains/JetBrainsMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/public/assets/fonts/jetBrains/JetBrainsMono-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  display: swap;
+}
+#body .bfl01 {
+  font-size: 0.1rem;
+  font-weight: 300;
+}
+#body .bfr01 {
+  font-size: 0.1rem;
+  font-weight: normal;
+}
+#body .bfm01 {
+  font-size: 0.1rem;
+  font-weight: 500;
+}
+#body .bfeb01 {
+  font-size: 0.1rem;
+  font-weight: 800;
+}
+#body .bfl02 {
+  font-size: 0.2rem;
+  font-weight: 300;
+}
+#body .bfr02 {
+  font-size: 0.2rem;
+  font-weight: normal;
+}
+#body .bfm02 {
+  font-size: 0.2rem;
+  font-weight: 500;
+}
+#body .bfeb02 {
+  font-size: 0.2rem;
+  font-weight: 800;
+}
+#body .bfl03 {
+  font-size: 0.3rem;
+  font-weight: 300;
+}
+#body .bfr03 {
+  font-size: 0.3rem;
+  font-weight: normal;
+}
+#body .bfm03 {
+  font-size: 0.3rem;
+  font-weight: 500;
+}
+#body .bfeb03 {
+  font-size: 0.3rem;
+  font-weight: 800;
+}
+#body .bfl04 {
+  font-size: 0.4rem;
+  font-weight: 300;
+}
+#body .bfr04 {
+  font-size: 0.4rem;
+  font-weight: normal;
+}
+#body .bfm04 {
+  font-size: 0.4rem;
+  font-weight: 500;
+}
+#body .bfeb04 {
+  font-size: 0.4rem;
+  font-weight: 800;
+}
+#body .bfl05 {
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+#body .bfr05 {
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+#body .bfm05 {
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+#body .bfeb05 {
+  font-size: 0.5rem;
+  font-weight: 800;
+}
+#body .bfl06 {
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+#body .bfr06 {
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+#body .bfm06 {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+#body .bfeb06 {
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+#body .bfl07 {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+#body .bfr07 {
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+#body .bfm07 {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+#body .bfeb07 {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+#body .bfl08 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+#body .bfr08 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+#body .bfm08 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#body .bfeb08 {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+#body .bfl09 {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+#body .bfr09 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+#body .bfm09 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#body .bfeb09 {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+#body .bfl10 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+#body .bfr10 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+#body .bfm10 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#body .bfeb10 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+#body .bfl11 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+#body .bfr11 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+#body .bfm11 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+#body .bfeb11 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+#body .bfl12 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+#body .bfr12 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+#body .bfm12 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#body .bfeb12 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+#body .bfl13 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+#body .bfr13 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+#body .bfm13 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#body .bfeb13 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+#body .bfl14 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+#body .bfr14 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+#body .bfm14 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#body .bfeb14 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+#body .bfl15 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+#body .bfr15 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+#body .bfm15 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#body .bfeb15 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#body .bfl16 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+#body .bfr16 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+#body .bfm16 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+#body .bfeb16 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+#body .bfl17 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+#body .bfr17 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+#body .bfm17 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+#body .bfeb17 {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+#body .bfl18 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+#body .bfr18 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+#body .bfm18 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#body .bfeb18 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+#body .bfl19 {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+#body .bfr19 {
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+#body .bfm19 {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+#body .bfeb19 {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+#body .bfl20 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+#body .bfr20 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+#body .bfm20 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+#body .bfeb20 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#body .bfl21 {
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+#body .bfr21 {
+  font-size: 2.1rem;
+  font-weight: normal;
+}
+#body .bfm21 {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+#body .bfeb21 {
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+#body .bfl22 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+#body .bfr22 {
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+#body .bfm22 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+#body .bfeb22 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+#body .bfl23 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+#body .bfr23 {
+  font-size: 2.3rem;
+  font-weight: normal;
+}
+#body .bfm23 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+#body .bfeb23 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+#body .bfl24 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+#body .bfr24 {
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+#body .bfm24 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+#body .bfeb24 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+#body .bfl25 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+#body .bfr25 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+#body .bfm25 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+#body .bfeb25 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+#body .bfl26 {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+#body .bfr26 {
+  font-size: 2.6rem;
+  font-weight: normal;
+}
+#body .bfm26 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+#body .bfeb26 {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+#body .bfl27 {
+  font-size: 2.7rem;
+  font-weight: 300;
+}
+#body .bfr27 {
+  font-size: 2.7rem;
+  font-weight: normal;
+}
+#body .bfm27 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+#body .bfeb27 {
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+#body .bfl28 {
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+#body .bfr28 {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+#body .bfm28 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+#body .bfeb28 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+#body .bfl29 {
+  font-size: 2.9rem;
+  font-weight: 300;
+}
+#body .bfr29 {
+  font-size: 2.9rem;
+  font-weight: normal;
+}
+#body .bfm29 {
+  font-size: 2.9rem;
+  font-weight: 500;
+}
+#body .bfeb29 {
+  font-size: 2.9rem;
+  font-weight: 800;
+}
+#body .bfl30 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+#body .bfr30 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+#body .bfm30 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+#body .bfeb30 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#body * {
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+}
+#body .layout-main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#body .layout-main .header-main {
+  box-sizing: border-box;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid var(--clr-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#body .layout-main .header-main .option {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+#body .layout-main .header-main .option .tab {
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--clr-border);
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+#body .layout-main .header-main .option .tab.active {
+  background-color: var(--clr-text);
+  color: var(--clr-background);
+}
+#body .layout-main .dashboard-main {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1rem 1.7rem;
+  padding-top: 4rem;
+}
+#body .layout-main .footer-main {
+  box-sizing: border-box;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  border-top: 1px solid var(--clr-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout-main .dashboard-main .pic {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--clr-border);
+}
+
+:root {
+  --clr-text: #44ff00;
+  --clr-background: #000000;
+  --clr-border: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
